@@ -42,7 +42,7 @@
                         <div class="col-xs-12 padding-bottom-lg text-center margin-top-lg">
                             <button type="reset" class="btn btn-primary btn-sm  padding-left-lg padding-right-lg">Reset</button>
                             <button type="submit" class="btn btn-danger btn-sm padding-left-lg padding-right-lg" id="adduser">Upload</button>
-                            <?php $instr="Please Keep the column of excel as it is like users table\n"
+                            <?php $instr="Please keep the column of excel as it is like users table\n"
                                     . "id column should be empty as it will be taken by DB as autoincrement\n"
                                     . "\nMandatory Columns in excel are :-\n"
                                     . "user_type\n"
@@ -63,7 +63,7 @@
                     
                     <div class="col-xs-8" style="border-color: #c8d7e4;height: 112px;border-style: ridge;">
 <!--                        <div class="col-xs-12 padding-bottom-lg text-center margin-top-lg" >-->
-                            <img src="../img/excel.png" alt="Instruction for excel file to upload">
+                            <img src="../img/excel1.png" alt="Instruction for excel file to upload">
                         <!--</div>-->
                         
                     </div>

@@ -201,11 +201,11 @@ var chart = AmCharts.makeChart("chartdiv", {
     "dataDateFormat": "YYYY-MM-DD",
     "valueAxes": [{
         "id": "v1",
-        "axisAlpha": 0,
+        "axisAlpha": 1,
         "position": "left",
         "ignoreAxisWidth":true,
         "integersOnly": true,
-        "title": 'Number of Onboard'
+        "title": 'Number of Onboard',
     }],
     "balloon": {
         "borderThickness": 1,
@@ -233,6 +233,8 @@ var chart = AmCharts.makeChart("chartdiv", {
         "valueField": "value",
         "balloonText": "<span style='font-size:18px;'>[[value]]</span>"
     }],
+//    "depth3D": 30,
+//    "angle": 20,
     "chartScrollbar": {
         "graph": "g1",
         "oppositeAxis":false,
@@ -292,7 +294,7 @@ var chart2 = AmCharts.makeChart("chartConfirmation", {
     "dataDateFormat": "YYYY-MM-DD",
     "valueAxes": [{
         "id": "v1",
-        "axisAlpha": 0,
+        "axisAlpha": 1,
         "position": "left",
         "ignoreAxisWidth":true,
         "integersOnly": true,
@@ -302,7 +304,8 @@ var chart2 = AmCharts.makeChart("chartConfirmation", {
         "borderThickness": 1,
         "shadowAlpha": 0,
         "adjustBorderColor":false,
-        "color":"#ffffff"
+        "color":"#ffffff",
+        "cornerRadius": 5
     },
     "legend": {
     "useGraphSettings": true,
@@ -323,7 +326,7 @@ var chart2 = AmCharts.makeChart("chartConfirmation", {
         "hideBulletsCount": 50,
         "lineThickness": 3,
         "title": "Active",
-        "showBalloon": true,
+//        "showBalloon": true,
         "useLineColorForBulletBorder": true,
         "valueField": "value1",
         "balloonText": "<span style='font-size:18px;'>[[value]]</span>"
@@ -332,7 +335,7 @@ var chart2 = AmCharts.makeChart("chartConfirmation", {
         "id": "g2",
         "bullet": "round",
         "bulletBorderAlpha": 1,
-        "bulletColor": "#00FF00",
+        "bulletColor": "#FFFFFF",
         "bulletSize": 8,
         "hideBulletsCount": 50,
         "lineThickness": 3,
@@ -346,7 +349,7 @@ var chart2 = AmCharts.makeChart("chartConfirmation", {
         "id": "g3",
         "bullet": "round",
         "bulletBorderAlpha": 1,
-        "bulletColor": "#ff003f",
+        "bulletColor": "#FFFFFF",
         "bulletSize": 8,
         "hideBulletsCount": 50,
         "lineThickness": 3,
@@ -359,7 +362,7 @@ var chart2 = AmCharts.makeChart("chartConfirmation", {
         "id": "g4",
         "bullet": "round",
         "bulletBorderAlpha": 1,
-        "bulletColor": "#ff003f",
+        "bulletColor": "#FFFFFF",
         "bulletSize": 8,
         "hideBulletsCount": 50,
         "lineThickness": 3,
@@ -368,6 +371,9 @@ var chart2 = AmCharts.makeChart("chartConfirmation", {
         "useLineColorForBulletBorder": true,
         "valueField": "value4"
     }],
+//    "depth3D": 30,
+//    "angle": 20,
+//    "rotate": true,
     "chartScrollbar": {
         "graph": "g1,g2,g3,g4",
         "oppositeAxis":false,

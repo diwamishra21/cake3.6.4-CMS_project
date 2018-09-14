@@ -1165,22 +1165,22 @@ class UsersController extends AppController {
                         } else {
                             $message = "File Uploading Failed.";
                             $this->Flash->set($message, ['element' => 'success']);
-                            return $this->redirect(['controller' => 'Users', 'action' => 'uploadUsers']);
+                            return $this->redirect(['controller' => 'Users', 'action' => 'uploadUsersByExcel']);
                         }
                     } else {
                         $message = "tmp_file not exists! File not found! File Uploading Failed.";
                         $this->Flash->set($message, ['element' => 'success']);
-                        return $this->redirect(['controller' => 'Users', 'action' => 'uploadUsers']);
+                        return $this->redirect(['controller' => 'Users', 'action' => 'uploadUsersByExcel']);
                     }
                 } else {
                     $message = "Upload Only excel file! File Uploading Failed.";
                     $this->Flash->set($message, ['element' => 'success']);
-                    return $this->redirect(['controller' => 'Users', 'action' => 'uploadUsers']);
+                    return $this->redirect(['controller' => 'Users', 'action' => 'uploadUsersByExcel']);
                 }
             } else {
                 $message = "File not found! File Uploading Failed.";
                 $this->Flash->set($message, ['element' => 'success']);
-                return $this->redirect(['controller' => 'Users', 'action' => 'uploadUsers']);
+                return $this->redirect(['controller' => 'Users', 'action' => 'uploadUsersByExcel']);
             }
         }
         $this->set(compact('sheetData'));
